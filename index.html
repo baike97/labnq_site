@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Pesquisa Científica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .carousel-item { display: none; transition: opacity 0.5s ease-in-out; }
+        .carousel-item.active { display: block; opacity: 1; }
+        /* Classes para controle de exibição "Ver Mais" */
+        .extra-member, .extra-pub, .extra-event { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#">
+                <img src="img/logo.png" alt="Logo" class="h-[70px] w-auto">
+            </a>
+            
+            <div class="hidden lg:flex space-x-6 font-medium">
+                <a href="#sobre" class="hover:text-blue-600">Sobre</a>
+                <a href="#linhas" class="hover:text-blue-600">Linhas de Pesquisa</a>
+                <a href="#publicacoes" class="hover:text-blue-600">Publicações</a>
+                <a href="#rh" class="hover:text-blue-600">Recursos Humanos</a>
+                <a href="#eventos" class="hover:text-blue-600">Eventos</a>
+                <a href="#contato" class="hover:text-blue-600">Contatos</a>
+            </div>
+
+            <button id="mobile-menu-button" class="lg:hidden text-blue-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 flex flex-col p-4 space-y-4 shadow-lg text-center font-semibold">
+            <a href="#sobre" class="hover:text-blue-600 py-2">Sobre</a>
+            <a href="#linhas" class="hover:text-blue-600 py-2 border-t">Linhas de Pesquisa</a>
+            <a href="#publicacoes" class="hover:text-blue-600 py-2 border-t">Publicações</a>
+            <a href="#rh" class="hover:text-blue-600 py-2 border-t">Recursos Humanos</a>
+            <a href="#eventos" class="hover:text-blue-600 py-2 border-t">Eventos</a>
+            <a href="#contato" class="hover:text-blue-600 py-2 border-t">Contatos</a>
+        </div>
+    </nav>
+
+    <header class="relative h-[60vh] flex items-center justify-center bg-blue-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=1920" alt="Laboratório" class="w-full h-full object-cover">
+        </div>
+        <div class="relative text-center px-4 text-white">
+            <h4 class="text-4xl md:text-6xl font-bold mb-4">Laboratório de Neuroquímica e Biologia Celular</h4>
+        </div>
+    </header>
+
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10 italic">Comunicados</h2>
+            <div id="carousel" class="relative max-w-6xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden text-left">
+                <div class="carousel-item active">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="img/Screenshot_20260426_231306.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 1">
+                        <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                            <p class="mt-4 text-gray-600">The enteric nervous system (ENS), a complex network of neurons and glial cells, is essential for maintaining intestinal homeostasis and is implicated in neurodegenerative diseases such as Parkinson's disease (PD).</p>
+                            <a href="https://link.springer.com/article/10.1007/s12640-026-00789-z" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="img/Feed Palestrantes IXNeuroglia/47.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 2">
+                        <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-blue-700">X Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
+                            <p class="mt-4 text-gray-600">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                            <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline"><a href="#eventos">Saiba mais</a></button>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="moveCarousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white p-3 rounded-full text-blue-800"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="moveCarousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white p-3 rounded-full text-blue-800"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 border-blue-600 pl-4">Sobre o Grupo</h2>
+                <p class="text-lg leading-relaxed text-gray-600">Dedicado ao estudo do papel da glia em aspectos da fisiopatologia do sistema nervoso, explorando modelos de doenças neurodegenerativas e ação de extratos de plantas regionais, especialmente dos flavonóides, na busca de biomarcadores e alvos terapeuticos; tem significativa atuação na formação de recursos humanos e detém cooperações consolidadas com grupos nacionais e internacionais com indicadores tais como estágios sanduíches de alunos, co-orientações, estágios pós-doutorais e crescente numero de publicações. Insere-se no INCT de Neurociência Translacional (INNT) e no INCT de D. Cerebro Neurotoxicidade e Neuroproteção. Seus pesquisadores participam de um total de 8 diferentes programas de pós-graduação, incluindo o Doutorado de Neurociência (PGNet) do INNT e têm projetos de popularização da ciência em escolas públicas de Salvador. Muitos dos egressos iniciados em ciência e titulados estão inseridos em diversas instituições de ensino/pesquisa</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="img/Gemini_Generated_Image_8ye3pw8ye3pw8ye3.png" class="rounded-xl shadow-2xl" alt="Laboratório">
+            </div>
+        </div>
+    </section>
+
+    <section id="linhas" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Linhas de Pesquisa</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
+                    <div class="w-24 h-24 flex-shrink-0 rounded-md overflow-hidden border">
+                        <img src="img/Gemini_Generated_Image_w029tww029tww029.png" class="object-cover w-full h-full">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl">Modelos in vitro e in vivo de neuroinflamacão e neurodegeneração</h3>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
+                    <div class="w-24 h-24 flex-shrink-0 rounded-md overflow-hidden border">
+                        <img src="img/Gemini_Generated_Image_f6j9dlf6j9dlf6j9.png" class="object-cover w-full h-full">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl">Prospecção de produtos bioativos em modelos in vivo e in vitro de estudo de desordens do sistema nervoso central</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publicacoes" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-between items-center mb-10 text-left">
+                <h2 class="text-3xl font-bold">Publicações</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden border">
+                    <img src="img/Screenshot_20260426_231306.png" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <p class="text-gray-600 text-sm mb-4">The enteric nervous system (ENS), a complex network of neurons and glial cells, is essential for maintaining intestinal homeostasis and is implicated in neurodegenerative diseases such as Parkinson's disease (PD).</p>
+                        <a href="https://link.springer.com/article/10.1007/s12640-026-00789-z" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden border">
+                    <img src="img/Screenshot_20260426_233011-1.png" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <p class="text-gray-600 text-sm mb-4">Glioblastomas (GBM) are malignant tumours with poor prognosis. Treatment involves chemotherapy and/or radiotherapy; however, there is currently no standard treatment for recurrence, and prognosis remains unfavourable. Inflammatory mediators and microRNAs (miRNAs) influence the aggressiveness of GBM, being involved in the communication with the cells of the tumour parenchyma, including microglia/macrophages, and maintaining an immunosuppressive microenvironment.</p>
+                        <a href="https://www.mdpi.com/1420-3049/30/1/158" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden border">
+                    <img src="img/Screenshot_20260426_233102.png" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <p class="text-gray-600 text-sm mb-4">Traumatic brain injury (TBI) has a complex and multifactorial pathology and is a major cause of death and disability for humans. Immediately after TBI, astrocytes and microglia react with complex morphological and functional changes known as reactive gliosis to form a glial scar in the area immediately adjacent to the lesion, which is the major barrier to neuronal regeneration.</p>
+                        <a href="https://www.mdpi.com/1422-0067/26/3/1275" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden border">
+                    <img src="img/Screenshot_20260426_235007.png" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <p class="text-gray-600 text-sm mb-4">Monocrotaline (MCT) has well-characterized hepatotoxic and pneumotoxic effects attributed to its active pyrrole metabolites. Studies have previously shown that astrocytes and neurons are targets of MCT, and that toxicity is attributed to astrocyte P450 metabolism to reactive metabolites. However, little is known about MCT toxicity and metabolism by brain endothelial cells (BECs), cells that, together with astrocytes, are specialized in xenobiotic metabolism and neuroprotection.</p>
+                        <a href="https://www.mdpi.com/2072-6651/17/2/65" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="extra-pub bg-white rounded-lg shadow-md overflow-hidden border">
+                    <img src="img/Screenshot_20260426_235420.png" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <p class="text-gray-600 text-sm mb-4">The imbalance between the overproduction of reactive species and antioxidant mechanisms can result in astrogliosis and oxidative stress associated with neurodegeneration. Based on the described antioxidant activity of naturally occurring flavonoids, this study evaluated the antioxidant mechanisms of the flavonoid naringenin and the senecioic acid ester derivatives in cortical astrocytes.</p>
+                        <a href="https://www.mdpi.com/1422-0067/26/5/2215" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                    </div>
+                </article>
+            </div>
+            <button onclick="toggleSection('extra-pub', this)" class="mt-10 bg-blue-900 text-white px-8 py-2 rounded-full font-bold text-sm">Ver mais Publicações</button>
+        </div>
+    </section>
+
+    <section id="rh" class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 italic">Recursos Humanos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10 mb-16">
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 flex flex-col items-center text-center">
+                    <img src="img/docente1.png" class="w-28 h-28 rounded-full mb-4 shadow border">
+                    <h3 class="text-2xl font-bold">Profª Drª Silvia Lima Costa</h3>
+                    <p class="text-blue-600 font-bold text-sm mb-4">Coordenadora</p>
+                    <div class="flex space-x-6 border-t w-full pt-4 justify-center">
+                        <a href="http://lattes.cnpq.br/8965253841041518" class="text-blue-800 text-xl"><i class="fas fa-id-card"></i></a>
+                        <a href="mailto:rodrigo@email.com" class="text-blue-800 text-xl"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 flex flex-col items-center text-center">
+                    <img src="img/docente2.png" class="w-28 h-28 rounded-full mb-4 shadow border">
+                    <h3 class="text-2xl font-bold">Profª Drª Maria de Fátima Dias Costa</h3>
+                    <p class="text-blue-600 font-bold text-sm mb-4">Coordenadora</p>
+                    <div class="flex space-x-6 border-t w-full pt-4 justify-center">
+                        <a href="http://lattes.cnpq.br/8318944131166018" class="text-blue-800 text-xl"><i class="fas fa-id-card"></i></a>
+                        <a href="mailto:beatriz@email.com" class="text-blue-800 text-xl"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow border-l-4 border-blue-600">
+                    <h4 class="font-bold text-blue-900 mb-4 uppercase">Pesquisadores</h4>
+                    <ul id="list-pesquisadores" class="text-sm space-y-1">
+                        <li>Alexandre Moraes Pinheiro</li><li>Ana Elisa Del'Arco Vinhas Costa</li><li>Balbino Lino dos Santos</li><li>Clarissa de Sampaio Schitine</li><li>Cleonice Creusa dos Santos</li><li>Fillipe Mendes de Araujo</li><li>Juciele Valéria Ribeiro de Oliveira</li>
+                        <li class="extra-member">Dr. Roberto Kalil</li>
+                    </ul>
+                    <button onclick="toggleList('list-pesquisadores', this)" class="mt-3 text-blue-600 font-bold text-xs">VER MAIS</button>
+                </div>
+                <div class="bg-white p-6 rounded shadow border-l-4 border-blue-600">
+                    <h4 class="font-bold text-blue-900 mb-4 uppercase">Estudantes</h4>
+                    <ul id="list-estudantes" class="text-sm space-y-1">
+                        <li>Cinthia Cristina de Oliveira Santos Costa</li><li>Deivison Silva Argolo</li><li>Flávia Santos Sanches</li><li>Florisvaldo da Silva Ramos</li><li>Heráclito Rocha Neto</li><li>Irlã Santos Lima</li><li>Janaina Ribeiro Pereira Soares</li>
+                        <li class="extra-member">Membro Extra 1</li>
+                    </ul>
+                    <button onclick="toggleList('list-estudantes', this)" class="mt-3 text-blue-600 font-bold text-xs">VER MAIS</button>
+                </div>
+                <div class="bg-white p-6 rounded shadow border-l-4 border-blue-600">
+                    <h4 class="font-bold text-blue-900 mb-4 uppercase">Técnicos</h4>
+                    <ul id="list-tecnicos" class="text-sm space-y-1">
+                        <li>Lucia Fonseca Santana</li><li>Veronica Moreira de Sousa</li>
+                        <li class="extra-member">Técnico Extra 1</li>
+                    </ul>
+                    <button onclick="toggleList('list-tecnicos', this)" class="mt-3 text-blue-600 font-bold text-xs">VER MAIS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 italic">Agenda de Eventos</h2>
+            <div class="max-w-4xl mx-auto space-y-6 text-left">
+                <div class="flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
+                    <img src="img/exe1.png" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-8 flex-1">
+                        <div class="text-blue-600 font-bold uppercase text-sm">21 a 29 de Agosto de 2025</div>
+                        <h3 class="text-2xl font-bold mt-1 text-blue-900">IX Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
+                        <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                        <a href="https://www.instagram.com/labnq.ufba/" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Veja como foi</a>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
+                    <img src="img/Feed Palestrantes IXNeuroglia/47.png" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-8 flex-1">
+                        <div class="text-blue-600 font-bold uppercase text-sm">Em Breve</div>
+                        <h3 class="text-2xl font-bold mt-1 text-blue-900">X Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
+                        <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                        <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="extra-event flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
+                    <img src="img/Feed Palestrantes IXNeuroglia/48.png" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-8 flex-1">
+                        <div class="text-blue-600 font-bold uppercase text-sm">Em Breve</div>
+                        <h3 class="text-2xl font-bold mt-1 text-blue-900">XI Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
+                        <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                        <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+            <button onclick="toggleSection('extra-event', this)" class="mt-10 bg-gray-200 text-gray-700 px-8 py-2 rounded-full font-bold text-xs">Ver mais Eventos</button>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center md:text-left items-center">
+        <div class="flex justify-center md:justify-start gap-6">
+            <img src="img/ufba-logo.png" alt="UFBA" class="h-[70px] opacity-70">
+        </div>
+
+        <div class="text-sm">
+            <p class="font-bold text-white mb-1">LabNq - UFBA</p>
+            <p>ICS - Sala 505</p>
+            <p>Av Reitor Miguel Calmon, s/n. Canela., Salvador, Bahia, Brasil 40231-300</p>
+        </div>
+
+        <div class="flex justify-center md:justify-end gap-6 text-2xl">
+            <a href="https://www.instagram.com/labnq.ufba/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:fatima@ufba.br" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 mt-10 pt-6 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+            <p>&copy; 2026 LabNq UFBA. Todos os direitos reservados.</p>
+            <p>
+                Desenvolvido por 
+                <a href="#" class="text-gray-400 hover:text-white transition-colors font-medium">
+                    LabNq
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Menu Mobile
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Carrossel
+        let currentItem = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        function showItem(index) {
+            items.forEach(i => i.classList.remove('active'));
+            if (index >= items.length) currentItem = 0;
+            else if (index < 0) currentItem = items.length - 1;
+            else currentItem = index;
+            items[currentItem].classList.add('active');
+        }
+        function moveCarousel(step) { showItem(currentItem + step); }
+        setInterval(() => moveCarousel(1), 5000);
+
+        // Funções Ver Mais (Listas e Seções)
+        function toggleList(listId, btn) {
+            const list = document.getElementById(listId);
+            const extra = list.querySelectorAll('.extra-member');
+            const isHidden = extra[0].style.display === 'none' || extra[0].style.display === '';
+            extra.forEach(item => item.style.display = isHidden ? 'block' : 'none');
+            btn.innerText = isHidden ? 'VER MENOS' : 'VER MAIS';
+        }
+
+        function toggleSection(className, btn) {
+            const elements = document.querySelectorAll('.' + className);
+            const isHidden = elements[0].style.display === 'none' || elements[0].style.display === '';
+            elements.forEach(el => el.style.display = isHidden ? (className.includes('event') ? 'flex' : 'block') : 'none');
+            btn.innerText = isHidden ? 'Ver Menos' : 'Ver mais ' + (className.includes('pub') ? 'Publicações' : 'Eventos');
+        }
+    </script>
+</body>
+</html>

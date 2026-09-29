@@ -1,0 +1,334 @@
+{
+    "grupo": {
+        "id": "73111",
+        "nome": "Laboratório de Neuroquímica e Biologia Celular",
+        "url": "http://dgp.cnpq.br/dgp/espelhogrupo/73111"
+    },
+    "atualizado_em": "2026-09-28T19:53:09",
+    "total": {
+        "pesquisadores": 14,
+        "estudantes": 29,
+        "tecnicos": 2
+    },
+    "pesquisadores": [
+        {
+            "nome": "Alexandre Moraes Pinheiro",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Ana Elisa Del'Arco Vinhas Costa",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "18/05/2019",
+            "lattes": ""
+        },
+        {
+            "nome": "Balbino Lino dos Santos",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "18/05/2019",
+            "lattes": ""
+        },
+        {
+            "nome": "Clarissa de Sampaio Schitine",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "12/11/2019",
+            "lattes": ""
+        },
+        {
+            "nome": "Cleonice Creusa dos Santos",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Fillipe Mendes de Araujo",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "George Emílio Sampaio Barreto",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Juciele Valéria Ribeiro de Oliveira",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "12/11/2019",
+            "lattes": ""
+        },
+        {
+            "nome": "Maria de Fátima Dias Costa",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "22/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Rafael Short Ferreira",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "27/10/2016",
+            "lattes": ""
+        },
+        {
+            "nome": "Ravena Pereira do Nascimento",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/07/2020",
+            "lattes": ""
+        },
+        {
+            "nome": "Silvia Lima Costa",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Suzana Braga de Souza",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Victor Diogenes Amaral da Silva",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        }
+    ],
+    "estudantes": [
+        {
+            "nome": "Ana Clara Neves Reis Pedreira",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "23/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Catarina de Jesus Nunes",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Cinthia Cristina de Oliveira Santos Costa",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "23/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Deivison Silva Argolo",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "02/05/2018",
+            "lattes": ""
+        },
+        {
+            "nome": "Edicleide Dos Santos Brito",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Èrica Novaes Soares",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Fernanda Vidal Carvalho",
+            "titulacao": "Pós-Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Flávia Santos Sanches",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "26/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Florisvaldo da Silva Ramos",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "26/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Heráclito Rocha Neto",
+            "titulacao": "Especialização",
+            "periodo": "",
+            "data_inclusao": "23/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Irlã Santos Lima",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "09/12/2024",
+            "lattes": ""
+        },
+        {
+            "nome": "Italo Ribeiro da Silva Valete",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Janaina Ribeiro Pereira Soares",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "04/11/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Jasiel Azevedo da Silva",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Jéssica Teles Souza",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "23/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Jorge Alberto Caldeira de Oliveira",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Juliana Helena Castro e Silva",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "28/10/2014",
+            "lattes": ""
+        },
+        {
+            "nome": "Larissa das Neves de Assis",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Lílian Vanessa da Penha Gonçalves",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Lucas de Menezes Figueredo",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "23/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Lucas Matheus Gonçalves de Oliveira",
+            "titulacao": "Pós-Doutorado",
+            "periodo": "",
+            "data_inclusao": "20/07/2020",
+            "lattes": ""
+        },
+        {
+            "nome": "Monique Reis de Santana",
+            "titulacao": "Pós-Doutorado",
+            "periodo": "",
+            "data_inclusao": "21/11/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Nívia Nonato Silva",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/07/2020",
+            "lattes": ""
+        },
+        {
+            "nome": "Sarah Alexandra Silva Lima",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "26/08/2023",
+            "lattes": ""
+        },
+        {
+            "nome": "Ticiane Caribé Macedo",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "18/05/2019",
+            "lattes": ""
+        },
+        {
+            "nome": "Vanessa Santana Freitas",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "31/10/2016",
+            "lattes": ""
+        },
+        {
+            "nome": "Victor Donatti Machado",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Vinícius Gomes Moreno",
+            "titulacao": "Graduação",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        },
+        {
+            "nome": "Washington Santos Antunes",
+            "titulacao": "Doutorado",
+            "periodo": "",
+            "data_inclusao": "17/05/2026",
+            "lattes": ""
+        }
+    ],
+    "tecnicos": [
+        {
+            "nome": "Lucia Fonseca Santana",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "27/10/2016",
+            "lattes": ""
+        },
+        {
+            "nome": "Veronica Moreira de Sousa",
+            "titulacao": "Mestrado",
+            "periodo": "",
+            "data_inclusao": "27/10/2016",
+            "lattes": ""
+        }
+    ]
+}

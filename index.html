@@ -13,20 +13,23 @@
         /* Classes para controle de exibição "Ver Mais" */
         .extra-member, .extra-pub, .extra-event { display: none; }
     </style>
+    <link rel="icon" type="image/png" href="Imagens/logo.png">
 </head>
 <body class="bg-gray-50 text-gray-800">
+
+    <!--NAV E HEADER-->
 
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#">
-                <img src="img/logo.png" alt="Logo" class="h-[70px] w-auto">
+                <img src="Imagens/logo.png" alt="Logo" class="h-[70px] w-auto">
             </a>
             
             <div class="hidden lg:flex space-x-6 font-medium">
-                <a href="#sobre" class="hover:text-blue-600">Sobre</a>
+                <a href="#sobre" class="hover:text-blue-600">Sobre o laboratório</a>
                 <a href="#linhas" class="hover:text-blue-600">Linhas de Pesquisa</a>
                 <a href="#publicacoes" class="hover:text-blue-600">Publicações</a>
-                <a href="#rh" class="hover:text-blue-600">Recursos Humanos</a>
+                <a href="#rh" class="hover:text-blue-600">Membros</a>
                 <a href="#eventos" class="hover:text-blue-600">Eventos</a>
                 <a href="#contato" class="hover:text-blue-600">Contatos</a>
             </div>
@@ -37,10 +40,10 @@
         </div>
 
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 flex flex-col p-4 space-y-4 shadow-lg text-center font-semibold">
-            <a href="#sobre" class="hover:text-blue-600 py-2">Sobre</a>
+            <a href="#sobre" class="hover:text-blue-600 py-2">Sobre o laboratório</a>
             <a href="#linhas" class="hover:text-blue-600 py-2 border-t">Linhas de Pesquisa</a>
             <a href="#publicacoes" class="hover:text-blue-600 py-2 border-t">Publicações</a>
-            <a href="#rh" class="hover:text-blue-600 py-2 border-t">Recursos Humanos</a>
+            <a href="#rh" class="hover:text-blue-600 py-2 border-t">Membros</a>
             <a href="#eventos" class="hover:text-blue-600 py-2 border-t">Eventos</a>
             <a href="#contato" class="hover:text-blue-600 py-2 border-t">Contatos</a>
         </div>
@@ -55,25 +58,28 @@
         </div>
     </header>
 
+    <!--COMUNICADOS-->
+
     <section class="py-16 bg-blue-50">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-10 italic">Comunicados</h2>
+            <h2 class="text-3xl font-bold mb-10 ">Comunicados</h2>
             <div id="carousel" class="relative max-w-6xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden text-left">
                 <div class="carousel-item active">
                     <div class="flex flex-col md:flex-row">
-                        <img src="img/Screenshot_20260426_231306.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 1">
+                        <img src="Imagens/Comunicados/neuroglia.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 1">
                         <div class="p-8 md:w-1/2 flex flex-col justify-center">
-                            <p class="mt-4 text-gray-600">The enteric nervous system (ENS), a complex network of neurons and glial cells, is essential for maintaining intestinal homeostasis and is implicated in neurodegenerative diseases such as Parkinson's disease (PD).</p>
-                            <a href="https://link.springer.com/article/10.1007/s12640-026-00789-z" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
+                            <h3 class="text-2xl font-bold text-blue-700">X Simpósio Internacional de Neuroquímica e Fisiopatologia da Célula Glial</h3>
+                            <p class="mt-4 text-gray-600">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                            <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline"><a href="#eventos">Saiba mais</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="flex flex-col md:flex-row">
-                        <img src="img/Feed Palestrantes IXNeuroglia/47.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 2">
+                        <img src="Imagens/Comunicados/Logo_25anos.png" class="md:w-1/2 h-64 md:h-80 object-cover" alt="Comunicado 2">
                         <div class="p-8 md:w-1/2 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-blue-700">X Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
-                            <p class="mt-4 text-gray-600">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
+                            <h3 class="text-2xl font-bold text-blue-700">25 anos do LabNq e a 10ª edição do NeuroGlia</h3>
+                            <p class="mt-4 text-gray-600">Em 2026, o Laboratório de Neuroquímica e Biologia Celular (LabNq) celebra 25 anos de pesquisa, formação científica e contribuição para a Neurociência. Para marcar essa trajetória, será realizada, de 26 a 28 de outubro, a 10ª edição do NeuroGlia</p>
                             <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline"><a href="#eventos">Saiba mais</a></button>
                         </div>
                     </div>
@@ -84,17 +90,184 @@
         </div>
     </section>
 
+    <!--SOBRE-->
+
     <section id="sobre" class="py-20">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 border-l-4 border-blue-600 pl-4">Sobre o Grupo</h2>
+                <h2 class="text-4xl font-bold mb-6 border-l-4 border-blue-600 pl-4">Sobre o Laboratório</h2>
                 <p class="text-lg leading-relaxed text-gray-600">Dedicado ao estudo do papel da glia em aspectos da fisiopatologia do sistema nervoso, explorando modelos de doenças neurodegenerativas e ação de extratos de plantas regionais, especialmente dos flavonóides, na busca de biomarcadores e alvos terapeuticos; tem significativa atuação na formação de recursos humanos e detém cooperações consolidadas com grupos nacionais e internacionais com indicadores tais como estágios sanduíches de alunos, co-orientações, estágios pós-doutorais e crescente numero de publicações. Insere-se no INCT de Neurociência Translacional (INNT) e no INCT de D. Cerebro Neurotoxicidade e Neuroproteção. Seus pesquisadores participam de um total de 8 diferentes programas de pós-graduação, incluindo o Doutorado de Neurociência (PGNet) do INNT e têm projetos de popularização da ciência em escolas públicas de Salvador. Muitos dos egressos iniciados em ciência e titulados estão inseridos em diversas instituições de ensino/pesquisa</p>
             </div>
             <div class="md:w-1/2">
-                <img src="img/Gemini_Generated_Image_8ye3pw8ye3pw8ye3.png" class="rounded-xl shadow-2xl" alt="Laboratório">
+
+            <div>
+
+                <!-- Imagem principal -->
+                <div
+                    id="gallery-main"
+                    class="relative overflow-hidden rounded-2xl shadow-xl cursor-pointer group"
+                    onclick="openLightbox()"
+                >
+                    <img
+                        id="main-gallery-image"
+                        src="Imagens/Laboratorio12.png"
+                        alt="Laboratório de Neuroquímica e Biologia Celular"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                    >
+
+                    <!-- Overlay -->
+                    <div
+                        class="absolute inset-0 bg-black/0 group-hover:bg-black/30
+                               transition duration-300 flex items-center justify-center"
+                    >
+                        <div
+                            class="opacity-0 group-hover:opacity-100
+                                   transition duration-300 bg-white/90
+                                   rounded-full p-4"
+                        >
+                            <i class="fas fa-expand text-blue-900 text-xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Botão anterior -->
+                    <button
+                        onclick="event.stopPropagation(); previousImage()"
+                        class="absolute left-4 top-1/2 -translate-y-1/2
+                               bg-white/80 hover:bg-white text-blue-900
+                               w-10 h-10 rounded-full shadow-md
+                               transition"
+                        aria-label="Imagem anterior"
+                    >
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Botão próximo -->
+                    <button
+                        onclick="event.stopPropagation(); nextImage()"
+                        class="absolute right-4 top-1/2 -translate-y-1/2
+                               bg-white/80 hover:bg-white text-blue-900
+                               w-10 h-10 rounded-full shadow-md
+                               transition"
+                        aria-label="Próxima imagem"
+                    >
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Miniaturas -->
+                <div class="grid grid-cols-3 gap-4 mt-4">
+
+                    <button
+                        onclick="selectImage(0)"
+                        class="gallery-thumbnail rounded-xl overflow-hidden
+                               border-2 border-blue-600 transition
+                               hover:opacity-80"
+                    >
+                        <img
+                            src="Imagens/Laboratorio3.png"
+                            alt="Laboratório"
+                            class="w-full h-24 object-cover"
+                        >
+                    </button>
+
+                    <button
+                        onclick="selectImage(1)"
+                        class="gallery-thumbnail rounded-xl overflow-hidden
+                               border-2 border-transparent transition
+                               hover:border-blue-400 hover:opacity-80"
+                    >
+                        <img
+                            src="Imagens/Laboratorio2.png"
+                            alt="Atividades do laboratório"
+                            class="w-full h-24 object-cover"
+                        >
+                    </button>
+
+                    <button
+                        onclick="selectImage(2)"
+                        class="gallery-thumbnail rounded-xl overflow-hidden
+                               border-2 border-transparent transition
+                               hover:border-blue-400 hover:opacity-80"
+                    >
+                        <img
+                            src="Imagens/Laboratorio3.png"
+                            alt="Pesquisadores do laboratório"
+                            class="w-full h-24 object-cover"
+                        >
+                    </button>
+
             </div>
+
+            <!-- LIGHTBOX -->
+            <div
+                id="lightbox"
+                class="fixed inset-0 z-[100] hidden bg-black/90
+                    items-center justify-center p-4"
+                onclick="closeLightbox()"
+            >
+
+                <!-- Fechar -->
+                <button
+                    onclick="event.stopPropagation(); closeLightbox()"
+                    class="absolute top-6 right-6 text-white
+                        text-3xl hover:text-blue-300 transition z-10"
+                    aria-label="Fechar galeria"
+                >
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Imagem -->
+                <div
+                    class="relative max-w-6xl w-full flex items-center justify-center"
+                    onclick="event.stopPropagation()"
+                >
+
+                    <img
+                        id="lightbox-image"
+                        src="Imagens/Laboratorio.png"
+                        alt="Imagem ampliada do laboratório"
+                        class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl"
+                    >
+
+                    <!-- Anterior -->
+                    <button
+                        onclick="previousImage()"
+                        class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2
+                            bg-white/80 hover:bg-white text-blue-900
+                            w-12 h-12 rounded-full shadow-lg transition"
+                        aria-label="Imagem anterior"
+                    >
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Próximo -->
+                    <button
+                        onclick="nextImage()"
+                        class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2
+                            bg-white/80 hover:bg-white text-blue-900
+                            w-12 h-12 rounded-full shadow-lg transition"
+                        aria-label="Próxima imagem"
+                    >
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+                <!-- Contador -->
+                <div
+                    id="lightbox-counter"
+                    class="absolute bottom-6 left-1/2 -translate-x-1/2
+                        text-white text-sm bg-black/50 px-4 py-2 rounded-full"
+                >
+                    1 / 3
+                </div>
+
+            </div>
+
         </div>
     </section>
+
+    <!--LINHAS-->
 
     <section id="linhas" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
@@ -102,7 +275,7 @@
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
                     <div class="w-24 h-24 flex-shrink-0 rounded-md overflow-hidden border">
-                        <img src="img/Gemini_Generated_Image_w029tww029tww029.png" class="object-cover w-full h-full">
+                        <img src="Imagens/Pesquisa1.png" class="object-cover w-full h-full">
                     </div>
                     <div>
                         <h3 class="font-bold text-xl">Modelos in vitro e in vivo de neuroinflamacão e neurodegeneração</h3>
@@ -110,7 +283,7 @@
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
                     <div class="w-24 h-24 flex-shrink-0 rounded-md overflow-hidden border">
-                        <img src="img/Gemini_Generated_Image_f6j9dlf6j9dlf6j9.png" class="object-cover w-full h-full">
+                        <img src="Imagens/Pesquisa2.png" class="object-cover w-full h-full">
                     </div>
                     <div>
                         <h3 class="font-bold text-xl">Prospecção de produtos bioativos em modelos in vivo e in vitro de estudo de desordens do sistema nervoso central</h3>
@@ -120,6 +293,8 @@
         </div>
     </section>
 
+    <!--PUBLICAÇÕES-->
+
     <section id="publicacoes" class="py-20">
         <div class="container mx-auto px-6 text-center">
             <div class="flex justify-between items-center mb-10 text-left">
@@ -127,35 +302,35 @@
             </div>
             <div class="grid md:grid-cols-2 gap-8 text-left">
                 <article class="bg-white rounded-lg shadow-md overflow-hidden border">
-                    <img src="img/Screenshot_20260426_231306.png" class="w-full h-48 object-cover">
+                    <img src="Imagens/Artigos/A1.png" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <p class="text-gray-600 text-sm mb-4">The enteric nervous system (ENS), a complex network of neurons and glial cells, is essential for maintaining intestinal homeostasis and is implicated in neurodegenerative diseases such as Parkinson's disease (PD).</p>
                         <a href="https://link.springer.com/article/10.1007/s12640-026-00789-z" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
                     </div>
                 </article>
                 <article class="bg-white rounded-lg shadow-md overflow-hidden border">
-                    <img src="img/Screenshot_20260426_233011-1.png" class="w-full h-48 object-cover">
+                    <img src="Imagens/Artigos/A2.png" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <p class="text-gray-600 text-sm mb-4">Glioblastomas (GBM) are malignant tumours with poor prognosis. Treatment involves chemotherapy and/or radiotherapy; however, there is currently no standard treatment for recurrence, and prognosis remains unfavourable. Inflammatory mediators and microRNAs (miRNAs) influence the aggressiveness of GBM, being involved in the communication with the cells of the tumour parenchyma, including microglia/macrophages, and maintaining an immunosuppressive microenvironment.</p>
                         <a href="https://www.mdpi.com/1420-3049/30/1/158" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
                     </div>
                 </article>
                 <article class="bg-white rounded-lg shadow-md overflow-hidden border">
-                    <img src="img/Screenshot_20260426_233102.png" class="w-full h-48 object-cover">
+                    <img src="Imagens/Artigos/A3.png" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <p class="text-gray-600 text-sm mb-4">Traumatic brain injury (TBI) has a complex and multifactorial pathology and is a major cause of death and disability for humans. Immediately after TBI, astrocytes and microglia react with complex morphological and functional changes known as reactive gliosis to form a glial scar in the area immediately adjacent to the lesion, which is the major barrier to neuronal regeneration.</p>
                         <a href="https://www.mdpi.com/1422-0067/26/3/1275" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
                     </div>
                 </article>
                 <article class="bg-white rounded-lg shadow-md overflow-hidden border">
-                    <img src="img/Screenshot_20260426_235007.png" class="w-full h-48 object-cover">
+                    <img src="Imagens/Artigos/A4.png" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <p class="text-gray-600 text-sm mb-4">Monocrotaline (MCT) has well-characterized hepatotoxic and pneumotoxic effects attributed to its active pyrrole metabolites. Studies have previously shown that astrocytes and neurons are targets of MCT, and that toxicity is attributed to astrocyte P450 metabolism to reactive metabolites. However, little is known about MCT toxicity and metabolism by brain endothelial cells (BECs), cells that, together with astrocytes, are specialized in xenobiotic metabolism and neuroprotection.</p>
                         <a href="https://www.mdpi.com/2072-6651/17/2/65" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
                     </div>
                 </article>
                 <article class="extra-pub bg-white rounded-lg shadow-md overflow-hidden border">
-                    <img src="img/Screenshot_20260426_235420.png" class="w-full h-48 object-cover">
+                    <img src="Imagens/Artigos/A5.png" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <p class="text-gray-600 text-sm mb-4">The imbalance between the overproduction of reactive species and antioxidant mechanisms can result in astrogliosis and oxidative stress associated with neurodegeneration. Based on the described antioxidant activity of naturally occurring flavonoids, this study evaluated the antioxidant mechanisms of the flavonoid naringenin and the senecioic acid ester derivatives in cortical astrocytes.</p>
                         <a href="https://www.mdpi.com/1422-0067/26/5/2215" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba mais</a>
@@ -166,13 +341,15 @@
         </div>
     </section>
 
+    <!--EQUIPE-->
+
     <section id="rh" class="py-20 bg-blue-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 italic">Recursos Humanos</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 italic">Membros</h2>
             
             <div class="grid md:grid-cols-2 gap-10 mb-16">
                 <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 flex flex-col items-center text-center">
-                    <img src="img/docente1.png" class="w-28 h-28 rounded-full mb-4 shadow border">
+                    <img src="Imagens/docente1.png" class="w-28 h-28 rounded-full mb-4 shadow border">
                     <h3 class="text-2xl font-bold">Profª Drª Silvia Lima Costa</h3>
                     <p class="text-blue-600 font-bold text-sm mb-4">Coordenadora</p>
                     <div class="flex space-x-6 border-t w-full pt-4 justify-center">
@@ -181,7 +358,7 @@
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 flex flex-col items-center text-center">
-                    <img src="img/docente2.png" class="w-28 h-28 rounded-full mb-4 shadow border">
+                    <img src="Imagens/docente2.png" class="w-28 h-28 rounded-full mb-4 shadow border">
                     <h3 class="text-2xl font-bold">Profª Drª Maria de Fátima Dias Costa</h3>
                     <p class="text-blue-600 font-bold text-sm mb-4">Coordenadora</p>
                     <div class="flex space-x-6 border-t w-full pt-4 justify-center">
@@ -203,16 +380,12 @@
                 <div class="bg-white p-6 rounded shadow border-l-4 border-blue-600">
                     <h4 class="font-bold text-blue-900 mb-4 uppercase">Estudantes</h4>
                     <ul id="list-estudantes" class="text-sm space-y-1">
-                        <li>Cinthia Cristina de Oliveira Santos Costa</li><li>Deivison Silva Argolo</li><li>Flávia Santos Sanches</li><li>Florisvaldo da Silva Ramos</li><li>Heráclito Rocha Neto</li><li>Irlã Santos Lima</li><li>Janaina Ribeiro Pereira Soares</li>
-                        <li class="extra-member">Membro Extra 1</li>
                     </ul>
                     <button onclick="toggleList('list-estudantes', this)" class="mt-3 text-blue-600 font-bold text-xs">VER MAIS</button>
                 </div>
                 <div class="bg-white p-6 rounded shadow border-l-4 border-blue-600">
                     <h4 class="font-bold text-blue-900 mb-4 uppercase">Técnicos</h4>
                     <ul id="list-tecnicos" class="text-sm space-y-1">
-                        <li>Lucia Fonseca Santana</li><li>Veronica Moreira de Sousa</li>
-                        <li class="extra-member">Técnico Extra 1</li>
                     </ul>
                     <button onclick="toggleList('list-tecnicos', this)" class="mt-3 text-blue-600 font-bold text-xs">VER MAIS</button>
                 </div>
@@ -220,35 +393,27 @@
         </div>
     </section>
 
+    <!--EVENTOS-->
+
     <section id="eventos" class="py-20 bg-white text-center">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-16 italic">Agenda de Eventos</h2>
             <div class="max-w-4xl mx-auto space-y-6 text-left">
                 <div class="flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
-                    <img src="img/exe1.png" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <img src="Imagens/Eventos/WhatsApp Image 2026-09-24 at 04.43.14.jpeg" class="md:w-1/3 h-48 md:h-auto object-cover">
                     <div class="p-8 flex-1">
-                        <div class="text-blue-600 font-bold uppercase text-sm">21 a 29 de Agosto de 2025</div>
-                        <h3 class="text-2xl font-bold mt-1 text-blue-900">IX Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
-                        <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
-                        <a href="https://www.instagram.com/labnq.ufba/" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Veja como foi</a>
+                        <div class="text-blue-600 font-bold uppercase text-sm">26 A 28 DE OUTUBRO</div>
+                        <h3 class="text-2xl font-bold mt-1 text-blue-900">X Simpósio Internacional de Neuroquímica e Fisiopatologia da Célula Glial</h3>
+                        <p class="text-gray-600 mt-3">Em 2026, o Laboratório de Neuroquímica e Biologia Celular (LabNq) celebra 25 anos de pesquisa, formação científica e contribuição para a Neurociência. Para marcar essa trajetória, será realizada, de 26 a 28 de outubro, a 10ª edição do NeuroGlia – Simpósio Internacional de Neuroquímica e Fisiopatologia das Células Gliais, no Instituto de Ciências da Saúde da Universidade Federal da Bahia (UFBA), em Salvador, Bahia.</p>
+                        <a href="https://www.instagram.com/labnq.ufba/" class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">SAIBA MAIS</a>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
-                    <img src="img/Feed Palestrantes IXNeuroglia/47.png" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <img src="Imagens/Eventos/exe1.png" class="md:w-1/3 h-48 md:h-auto object-cover">
                     <div class="p-8 flex-1">
-                        <div class="text-blue-600 font-bold uppercase text-sm">Em Breve</div>
-                        <h3 class="text-2xl font-bold mt-1 text-blue-900">X Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
+                        <h3 class="text-2xl font-bold mt-1 text-blue-900">IX Simpósio Internacional de Neuroquímica e Fisiopatologia da Célula Glial</h3>
                         <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
-                        <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba Mais</button>
-                    </div>
-                </div>
-                <div class="extra-event flex flex-col md:flex-row bg-white border rounded-2xl overflow-hidden shadow-sm">
-                    <img src="img/Feed Palestrantes IXNeuroglia/48.png" class="md:w-1/3 h-48 md:h-auto object-cover">
-                    <div class="p-8 flex-1">
-                        <div class="text-blue-600 font-bold uppercase text-sm">Em Breve</div>
-                        <h3 class="text-2xl font-bold mt-1 text-blue-900">XI Simpósio Internacional de Neuroquímica e Patofisiologia da Célula Glial</h3>
-                        <p class="text-gray-600 mt-3">Aumentando a diversidade na formação de neurocientistas na bahia, Brasil.</p>
-                        <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">Saiba Mais</button>
+                        <button class="mt-4 text-blue-700 font-bold text-xs uppercase hover:underline">VEJA COMO FOI</button>
                     </div>
                 </div>
             </div>
@@ -256,10 +421,12 @@
         </div>
     </section>
 
+    <!--fOOTER-->
+
     <footer id="contato" class="bg-gray-900 text-gray-300 py-12">
     <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center md:text-left items-center">
         <div class="flex justify-center md:justify-start gap-6">
-            <img src="img/ufba-logo.png" alt="UFBA" class="h-[70px] opacity-70">
+            <img src="Imagens/ufba-logo.png" alt="UFBA" class="h-[70px] opacity-70">
         </div>
 
         <div class="text-sm">
@@ -288,40 +455,9 @@
     </div>
 </footer>
 
-    <script>
-        // Menu Mobile
-        const menuBtn = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    <!--script-->
 
-        // Carrossel
-        let currentItem = 0;
-        const items = document.querySelectorAll('.carousel-item');
-        function showItem(index) {
-            items.forEach(i => i.classList.remove('active'));
-            if (index >= items.length) currentItem = 0;
-            else if (index < 0) currentItem = items.length - 1;
-            else currentItem = index;
-            items[currentItem].classList.add('active');
-        }
-        function moveCarousel(step) { showItem(currentItem + step); }
-        setInterval(() => moveCarousel(1), 5000);
+    <script src="JavaScript/script.js"></script>
 
-        // Funções Ver Mais (Listas e Seções)
-        function toggleList(listId, btn) {
-            const list = document.getElementById(listId);
-            const extra = list.querySelectorAll('.extra-member');
-            const isHidden = extra[0].style.display === 'none' || extra[0].style.display === '';
-            extra.forEach(item => item.style.display = isHidden ? 'block' : 'none');
-            btn.innerText = isHidden ? 'VER MENOS' : 'VER MAIS';
-        }
-
-        function toggleSection(className, btn) {
-            const elements = document.querySelectorAll('.' + className);
-            const isHidden = elements[0].style.display === 'none' || elements[0].style.display === '';
-            elements.forEach(el => el.style.display = isHidden ? (className.includes('event') ? 'flex' : 'block') : 'none');
-            btn.innerText = isHidden ? 'Ver Menos' : 'Ver mais ' + (className.includes('pub') ? 'Publicações' : 'Eventos');
-        }
-    </script>
 </body>
 </html>
